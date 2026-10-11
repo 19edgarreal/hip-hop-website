@@ -1,0 +1,87 @@
+/* General page styling */
+body {
+    background-color: #f4f1ea;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Heading styles */
+h1 {
+    color: #b22222;
+    text-align: center;
+    font-size: 36px;
+}
+
+h2 {
+    color: #333333;
+    text-align: center;
+    font-size: 26px;
+}
+
+/* Paragraph styles */
+p {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+/* Reusable custom classes */
+.content-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.highlight {
+    color: #b22222;
+    font-weight: bold;
+}
+
+/* Unique section IDs */
+#site-header {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#site-footer {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Flexbox layout for side-by-side content */
+.flex-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.flex-container > section {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+}
