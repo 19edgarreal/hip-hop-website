@@ -1,7 +1,7 @@
 /* General page styling */
 body {
     background-color: #f4f1ea;
-    color: #222222;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6;
@@ -11,13 +11,13 @@ body {
 
 /* Heading styles */
 h1 {
-    color: #b22222;
+    color: #ffffff;
     text-align: center;
     font-size: 36px;
 }
 
 h2 {
-    color: #333333;
+    color: #ffffff;
     text-align: center;
     font-size: 26px;
 }
@@ -37,7 +37,7 @@ p {
 }
 
 .highlight {
-    color: #b22222;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -84,4 +84,64 @@ p {
     .flex-container {
         flex-direction: column;
     }
+}
+/* Accessibility: high-contrast text and backgrounds */
+body {
+    background-color: #F4F1EA;
+    color: #222222;
+}
+
+/* Header: white text on a dark background */
+#site-header {
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+#site-header h1,
+#site-header h2,
+#site-header h3,
+#site-header p,
+#site-header .highlight {
+    color: #FFFFFF;
+}
+
+/* Content cards: dark text on white */
+.content-section {
+    background-color: #FFFFFF;
+    color: #222222;
+}
+
+.content-section h1,
+.content-section h2,
+.content-section h3,
+.content-section p,
+.content-section li {
+    color: #222222;
+}
+
+/* Footer: readable text and links on a dark background */
+#site-footer {
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+#site-footer p,
+#site-footer a {
+    color: #FFFFFF;
+}
+
+#site-footer a {
+    text-decoration: underline;
+}
+
+/* Links on the light page background */
+body a {
+    color: #174A8B;
+    text-decoration: underline;
+}
+
+/* Preserve high contrast for keyboard focus */
+a:focus-visible {
+    outline: 3px solid #005FCC;
+    outline-offset: 3px;
 }
